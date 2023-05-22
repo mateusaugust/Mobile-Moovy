@@ -1,9 +1,9 @@
-
+import NavBar from "./Components/NavBar";
 
 function App() {
  
   return (
-   <h1>Teste</h1>
+    <NavBar/>
   );
 }
 
