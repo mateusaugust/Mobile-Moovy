@@ -1,0 +1,21 @@
+.footer{
+  text-align: center;
+  padding-right: 2.5rem;
+}
+
+
+.redesSociais{
+  list-style: none;
+  display: flex;
+  justify-content:center;
+}
+
+.redesSociais a{
+  color: black;
+  margin: 0 0.5em;
+}
+  
+.redesSociais a:hover{
+  color: #0ACF83;
+}
+
