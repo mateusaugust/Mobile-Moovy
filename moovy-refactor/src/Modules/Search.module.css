@@ -1,0 +1,22 @@
+.divPosition{
+  margin-left: 20vw;
+  height: 35vw;
+  width: 64vw;
+}
+
+.divPesquisa{ 
+  background-color: #baffd0;
+ justify-content: center;
+ display: flex;
+ flex-wrap: wrap;
+ text-align: center;
+ overflow-y:auto; 
+ margin-top: 1vw;
+ width: 64vw;
+ height: 70vh;
+}
+
+.divPesquisa::-webkit-scrollbar {
+  width: 0.2em;
+  height: 0.2em;
+}
