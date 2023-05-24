@@ -9,6 +9,8 @@ import InputBase from '@mui/material/InputBase';
 import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 
+import { Scrollbars } from 'react-custom-scrollbars-2';
+
 
 
 
@@ -32,9 +34,7 @@ function Search (){
     }
 
     return(
-       
-        <section>
-            <div className={styles.divPosition}>
+            <div className={styles.divBarSearch}>
         
              
                     <Paper
@@ -49,7 +49,7 @@ function Search (){
                         <InputBase
                             sx={{ ml: 1, flex: 1 }}
                             placeholder="Buscar Filme"
-                            inputProps={{ 'Inter': 'aria-label' }}
+                            inputProps={{ 'inter': 'aria-label' }}
                             onChange={(e) => setTerm(e.target.value)}
                         />
                         <IconButton  onClick={handleSearch} type="button" sx={{ p: '10px' }} aria-label="search">
@@ -58,18 +58,22 @@ function Search (){
                         
                     </Paper>
                
+                <div className={styles.divPosition}>
+                    <div className={styles.divPesquisa}>
+                        <Scrollbars style={{ width:'100%', height: '100%'} }>
+                            <div className={styles.divContainer}>
+                                {filmes.map((filme) =>{
+                                    return(
+                                        <CardSearch key={filme.id} {...filme}/>   
+                                    )
+                                    })
 
-                <div className={styles.divPesquisa}>
-                {filmes.map((filme) =>{
-                    return(
-                        <CardSearch key={filme.id} {...filme}/>   
-                    )
-                    })
-
-                }   
-                </div>  
+                                } 
+                            </div>
+                        </Scrollbars>  
+                    </div> 
+                </div> 
             </div>
-        </section>
     )
 }
 

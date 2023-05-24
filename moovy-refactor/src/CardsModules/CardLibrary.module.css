@@ -1,0 +1,72 @@
+
+.cardGeral{
+  margin-top: 0.5em;
+  margin-left: 1em;
+  text-align: center;
+  width: 15rem; 
+  height: 24rem;
+  margin-right:1.5rem ; 
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.image img{
+  overflow: hidden;
+  position: relative;
+  width: 12rem;
+  height: 17rem;
+}
+
+.image:hover .overView{
+  transform: translatey(0%);
+}
+
+.overView{
+  height: 18rem;
+  border-radius: 10px;
+  transform: translate(100%);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffbc11;
+  padding: 1em;
+  overflow: auto;
+}
+
+.overView::-webkit-scrollbar {
+  width: 0.2em;
+  height: 0.2em;
+}
+
+
+
+.star{
+  margin-left: 2.1em;
+  margin-top: 0.9rem;
+  color: #ffbc11;
+
+}
+
+.infoDescription{
+  display: flex;
+  justify-content: space-between;
+}
+
+.voter{
+  padding-right: 2.1rem;
+  margin-top: 10px;
+  
+}
+
+
+.divConfirmacao{
+  background-color: #ffbc11;
+  width: 14.8rem;
+  height: 5rem;
+  border-radius: 0.5rem;
+}
+
+

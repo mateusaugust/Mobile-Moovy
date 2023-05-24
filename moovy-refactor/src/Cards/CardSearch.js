@@ -33,8 +33,8 @@ function CardSearch(props){
                     <BsFillStarFill className={styles.star}/>
                     <p className={styles.voter}>{props.vote_average.toFixed(1)}</p>
                     <Button onClick={addStorage} variant="contained" sx={
-                    isAdd ? {backgroundColor:'#ed9121',height:'2.5rem', width:'6rem',mr:'1.5rem', mt:'0.4rem'} 
-                    : {backgroundColor:'#0ACF83', height:'2.5rem', width:'6rem',mr:'1.5rem', mt:'0.4rem'}} 
+                    isAdd ? {backgroundColor:'#ffbc11',height:'1.9rem', width:'6rem',mr:'1.5rem'} 
+                    : {backgroundColor:'#0ACF83', height:'1.9rem', width:'6rem',mr:'1.5rem', mt:'0.2rem'}} 
                     >{isAdd ?"Adicionado" : "Adicionar"}</Button>
                 </div>
             </div>

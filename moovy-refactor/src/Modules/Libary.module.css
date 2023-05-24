@@ -1,0 +1,21 @@
+.divContainer{
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y:auto; 
+  justify-content: center;
+  
+}
+.divPosition{
+  width: 100vw;
+  padding-left: 26px;
+  padding-right: 26px;
+}
+.divPesquisa{
+  display: flex;
+  border-radius: 10px;
+  background-color: #baffd0;
+  margin-top: 1vw;
+  width: 100%;
+  height: 80vh;
+}
+
